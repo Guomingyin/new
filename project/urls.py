@@ -24,6 +24,8 @@ from master import manager as manager_view
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     #前台
+    #默认页
+    url(r'^$',user_views.u_main,name='u_main'),
     #前台注册
     url(r'^u_register', user_views.u_register,name='u_register'),
     #前台登录
